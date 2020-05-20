@@ -70,11 +70,11 @@ The next few steps will add the following list of components to your Azure subsc
 
 1. Deploy the ARM template via [Azure Cloud Shell](https://shell.azure.com/) and the `az` tool. Modify the name of the resource group and region/location, then paste each of the following lines into your [shell](https://shell.azure.com/):
     ```bash
-    resourceGroupName="MyResourceGroup"
+    $resourceGroupName="MyResourceGroup"
 
-    location="westus2"
+    $location="westus2"
 
-    deploymentName="ingress-appgw"
+    $deploymentName="ingress-appgw"
 
     az group create -n $resourceGroupName -l $location
 
